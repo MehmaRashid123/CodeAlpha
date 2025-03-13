@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            MY IMAGE GALLERY
+        </h1>
+
+        <div class="controls">
+            <input type="file" id="imageUpload">
+            <button onclick="uploadImage()">Upload</button>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
